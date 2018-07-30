@@ -1,0 +1,4 @@
+<div class="container py-5"><%= render 'input_form' %></div>
+<% if @numbers.present? %>
+  <div class="container"><%= render 'fizzbuzz_result', numbers: @numbers %></div>
+<% end %>

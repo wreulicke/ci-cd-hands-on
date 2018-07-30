@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hands-on</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar navbar-dark bg-dark"><div class="navbar-brand">FizzBuzz</div><div class="navbar-text">CodePipelineでデプロイされました</div></div>
+    </header>
+    <main>
+      <section class="container"><%= yield %></section>
+    </main>
+  </body>
+</html>
