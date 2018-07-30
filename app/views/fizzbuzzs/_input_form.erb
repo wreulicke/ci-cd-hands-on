@@ -1,0 +1,7 @@
+<%= form_for @calculator, :url => {:action => :create} do |f| %>
+  <div class="form-group">
+    <%= f.label :count %>
+    <%= f.text_field :count, class: 'form-control', placeholder: '3'%>
+  </div>
+  <%= f.submit 'Calculate!', class: ['btn', 'btn-primary'] %>
+<% end %>
