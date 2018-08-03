@@ -5,7 +5,7 @@ class Fizzbuzz include ActiveModel::Model
 
   def calculate
     (1..(count.to_i)).map do |i|
-      if i % 15 == 0
+      if i % 10 == 0
         "FizzBuzz"
       elsif i % 5 == 0
         "Buzz"
